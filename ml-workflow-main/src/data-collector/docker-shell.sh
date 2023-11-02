@@ -8,8 +8,10 @@ export IMAGE_NAME="dogs-app-data-collector"
 export BASE_DIR=$(pwd)
 export PERSISTENT_DIR=$(pwd)/../../../persistent-folder/
 export SECRETS_DIR=$(pwd)/../../../secrets/
-export GCP_PROJECT=spotted-399806
-export GCS_BUCKET_NAME="raw-spotted-data"
+#export GCP_PROJECT=spotted-399806
+export GCP_PROJECT=ac215ol
+#export GCS_BUCKET_NAME="raw-spotted-data"
+export GCS_BUCKET_NAME=dog-pictures-webscrape
 
 # Build the image based on the Dockerfile
 docker build -t $IMAGE_NAME -f Dockerfile .
