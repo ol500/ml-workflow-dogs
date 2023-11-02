@@ -12,9 +12,9 @@ export GCP_PROJECT=spotted-399806
 export GCS_BUCKET_NAME="raw-spotted-data"
 
 # Build the image based on the Dockerfile
-#docker build -t $IMAGE_NAME -f Dockerfile .
+docker build -t $IMAGE_NAME -f Dockerfile .
 # M1/2 chip macs use this line
-docker build -t $IMAGE_NAME --platform=linux/arm64/v8 -f Dockerfile .
+#docker build -t $IMAGE_NAME --platform=linux/arm64/v8 -f Dockerfile .
 
 # Run Container
 docker run --rm --name $IMAGE_NAME -ti \
