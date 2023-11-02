@@ -4,12 +4,12 @@
 set -e
 
 # Define some environment variables
-export IMAGE_NAME="mushroom-app-data-collector"
+export IMAGE_NAME="dogs-app-data-collector"
 export BASE_DIR=$(pwd)
 export PERSISTENT_DIR=$(pwd)/../../../persistent-folder/
 export SECRETS_DIR=$(pwd)/../../../secrets/
-export GCP_PROJECT="ac215-project"
-export GCS_BUCKET_NAME="mushroom-app-ml-workflow-demo"
+export GCP_PROJECT=spotted-399806
+export GCS_BUCKET_NAME="raw-spotted-data"
 
 # Build the image based on the Dockerfile
 #docker build -t $IMAGE_NAME -f Dockerfile .
